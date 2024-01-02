@@ -1,6 +1,55 @@
+@font-face {
+    font-family: bebas;
+    src: url(/BebasNeue-Regular.ttf);
+}
+
 html{
     box-sizing: border-box;    
 }
 body{
-    
+    margin: 0;
+    font-family: bebas;
+    background-color: rgb(221, 216, 216);
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+/* Loading */
+.loader{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background:rgba(255, 255, 255, 0.9);
+}
+.loader img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* img container */
+.img-container{
+    margin: 20px 20%;
+}
+.img-container img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Media Query: Large smartphones */
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 20px;
+    }
+
+    .img-container{
+        margin: 15px;
+    }
 }
