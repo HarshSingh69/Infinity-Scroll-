@@ -53,4 +53,11 @@ async function getPhotos(){
     }
 }
 
+// creating a scroller to load more pages
+window.addEventListener('scroll',()=>{
+    if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000){
+        getPhotos();
+        console.log('load more')
+    }
+});
 getPhotos();
